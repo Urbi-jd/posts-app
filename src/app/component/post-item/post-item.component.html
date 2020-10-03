@@ -1,1 +1,21 @@
-<p>post-item works!</p>
+<mat-card class="bm-4">
+  <mat-card-header>
+    <div mat-card-avatar>
+    <img src="https://via.placeholder.com/48x48" alt="">
+    </div>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <mat-card-subtitle>{{ post.id}} - {{ post.userId}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>
+      {{ post.body }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+
